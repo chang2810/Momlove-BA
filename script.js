@@ -151,11 +151,11 @@ new Chart(document.getElementById('chartReview'), {
 new Chart(document.getElementById('chartFb'), {
   type: 'bar',
   data: {
-    labels: ['Hội mẹ bỉm sữa buôn bán', 'Hội nuôi con bằng sữa mẹ - VN', 'Làm cha mẹ - Cộng đồng cha mẹ VN', 'Nhóm chuyên đồ trẻ em (ví dụ)', 'Mua bán mẹ bỉm TP.HCM', 'Nhóm khu vực nhỏ (ví dụ)'],
+    labels: ['Hội mẹ bỉm sữa buôn bán', 'Hội nuôi con bằng sữa mẹ - VN', 'Làm cha mẹ - Cộng đồng cha mẹ VN', 'Nhóm chuyên đồ trẻ em (ví dụ)', 'Mua bán mẹ bỉm TP.HCM'],
     datasets: [{
-      data: [505, 484, 177, 124, 78.5, 34.9],
+      data: [505, 484, 177, 124, 78.5],
       backgroundColor: '#778D7A',
-      borderRadius: 6,
+      borderRadius: 5,
     }]
   },
   options: {
