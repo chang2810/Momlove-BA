@@ -127,7 +127,10 @@ new Chart(document.getElementById('chartTmdt'), {
 new Chart(document.getElementById('chartReview'), {
   type: 'bar',
   data: {
-    labels: ['Xem ≥2-3 review/tư vấn\ntrước khi mua SP mới', 'Từng đổi quyết định mua\nsau khi đọc thảo luận trong group'],
+   labels: [
+  "Xem ≥2-3 review/tư vấn trước khi mua SP mới",
+  ["Thay đổi quyết định mua", "sau khi đọc thảo luận trong group"] // Tự động xuống 2 dòng
+],
     datasets: [{
       data: [70, 58],
       backgroundColor: '#E39159',
