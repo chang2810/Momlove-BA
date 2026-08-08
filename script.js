@@ -127,8 +127,9 @@ new Chart(document.getElementById('chartTmdt'), {
 new Chart(document.getElementById('chartReview'), {
   type: 'bar',
   data: {
-   labels: ["Xem ≥2-3 review/tư vấn", "trước khi mua SP mới"],
-  ["Thay đổi quyết định mua", "sau khi đọc thảo luận trong group"] // Tự động xuống 2 dòng
+   labels: [
+  ["Xem ≥2-3 review/tư vấn", "trước khi mua SP mới"],
+  ["Thay đổi quyết định mua", "sau khi đọc thảo luận trong group"]
 ],
     datasets: [{
       data: [70, 58],
