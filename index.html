@@ -337,17 +337,16 @@
   <table class="cf-table erd-table">
     <thead><tr><th>Bảng cha (1) → Bảng con (N)</th><th>Quan hệ</th><th>Ý nghĩa</th></tr></thead>
     <tbody>
-      <tr><td>USER → VENDOR</td><td>1–1</td><td>Một user có tối đa 1 gian hàng</td></tr>
-      <tr><td>VENDOR → PRODUCT</td><td>1–N</td><td>Một gian hàng đăng nhiều sản phẩm</td></tr>
+      <tr><td>USER → SELLER</td><td>1–1</td><td>Một user có tối đa 1 gian hàng</td></tr>
+      <tr><td>SELLER → PRODUCT</td><td>1–N</td><td>Một gian hàng đăng nhiều sản phẩm</td></tr>
       <tr><td>CATEGORY → PRODUCT / FORUM_POST</td><td>1–N</td><td>Một danh mục phân loại nhiều sản phẩm/bài viết</td></tr>
       <tr><td>USER → ORDERS → ORDER_ITEM ← PRODUCT</td><td>1-N</td><td>Một đơn hàng gồm nhiều sản phẩm, một sản phẩm nằm trong nhiều đơn</td></tr>
       <tr><td>ORDERS → PAYMENT</td><td>1–1</td><td>Một đơn hàng có một lượt thanh toán</td></tr>
       <tr><td>PRODUCT → PRODUCT_REVIEW ← ORDERS</td><td>1–N</td><td>Review gắn với đơn hàng để xác thực đã mua thật</td></tr>
-      <tr><td>ORDER_ITEM → RETURN_REQUEST</td><td>1–N</td><td>Một sản phẩm trong đơn có thể bị khiếu nại</td></tr>
+      <tr><td>ORDER_ITEM → COMPLAINTS</td><td>1–N</td><td>Một sản phẩm trong đơn có thể bị khiếu nại</td></tr>
       <tr><td>FORUM_POST → COMMENT</td><td>1–N</td><td>Một bài viết có nhiều bình luận</td></tr>
-      <tr><td>COMMENT → HELPFUL_VOTE</td><td>1–N</td><td>Một bình luận nhận nhiều lượt đánh giá hữu ích</td></tr>
       <tr><td>USER → REPORT</td><td>1–N</td><td>Một user gửi nhiều report; một admin xử lý nhiều report</td></tr>
-      <tr><td>USER → NOTIFICATION / MESSAGE</td><td>1–N</td><td>Một user nhận nhiều thông báo / gửi nhiều tin nhắn</td></tr>
+      <tr><td>USER → MESSAGE</td><td>1–N</td><td>Một user gửi nhiều tin nhắn</td></tr>
     </tbody>
   </table>
   <p class="src">Xem sơ đồ code đầy đủ (mermaid) trong lịch sử làm việc nếu cần đối chiếu lại — bản Figma ở trên nên là bản chính thức để nộp bài.</p>
